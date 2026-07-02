@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+
+  <!-- Warm gradient background -->
+  <defs>
+    <radialGradient id="bgGrad" cx="40%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#FFF5F0"/>
+      <stop offset="55%" stop-color="#FFECE3"/>
+      <stop offset="100%" stop-color="#FDE8D8"/>
+    </radialGradient>
+    <radialGradient id="blob1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FF7A3D" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#FF7A3D" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Rounded square background -->
+  <rect width="1024" height="1024" rx="224" fill="url(#bgGrad)"/>
+
+  <!-- Decorative blob -->
+  <ellipse cx="820" cy="180" rx="340" ry="340" fill="url(#blob1)"/>
+
+  <!-- White icon card -->
+  <rect x="262" y="262" width="500" height="500" rx="120"
+    fill="white" fill-opacity="0.92" stroke="#FFD4B8" stroke-width="3"/>
+
+  <!-- Wrench handle -->
+  <rect x="486" y="430" width="52" height="210" rx="26" fill="#E8520A"/>
+
+  <!-- Wrench left arm -->
+  <rect x="400" y="330" width="48" height="130" rx="24" fill="#E8520A"/>
+  <!-- Wrench right arm -->
+  <rect x="576" y="330" width="48" height="130" rx="24" fill="#E8520A"/>
+  <!-- Wrench crossbar -->
+  <rect x="400" y="410" width="224" height="52" rx="26" fill="#E8520A"/>
+
+  <!-- Bolt hole -->
+  <circle cx="512" cy="640" r="36" fill="#E8520A"/>
+  <circle cx="512" cy="640" r="18" fill="white" fill-opacity="0.9"/>
+
+  <!-- Brand dot -->
+  <circle cx="700" cy="700" r="28" fill="#E8520A"/>
+
+</svg>
