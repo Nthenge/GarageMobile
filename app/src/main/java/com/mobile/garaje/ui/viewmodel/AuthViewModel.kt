@@ -84,6 +84,7 @@ class AuthViewModel(application: Application) : AndroidViewModel(application) {
                     .putString("firstname",         response?.firstname                                  ?: "")
                     .putString("initials",          buildInitials(response?.firstname, response?.secondname))
                     .putBoolean("detailsCompleted", response?.detailsCompleted                          ?: false)
+                    .putString("userId", response?.userId.toString())
                     .apply()
 
                 AuthState.Success("Login successful")

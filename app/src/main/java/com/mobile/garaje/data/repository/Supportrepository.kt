@@ -59,7 +59,7 @@ class SupportRepository {
 
     suspend fun getMessages(token: String, issueId: Long): Result<List<ChatMessageDto>> {
         return try {
-            val response = supportApi.getMessages(token, issueId)
+            val response = supportApi.getMessages("Bearer $token", issueId)
             if (response.isSuccessful) {
                 Result.success(response.body()?.data ?: emptyList())
             } else {

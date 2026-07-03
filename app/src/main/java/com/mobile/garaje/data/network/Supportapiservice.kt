@@ -31,7 +31,7 @@ interface SupportApiService {
 
     // FIXED: was `AuthApiResponse<List<ChatMessage>>` — AuthApiResponse isn't generic
     // (it's hardcoded to AuthResponse), and this should return DTOs, not the UI model.
-    @GET("/talk-to-us/{issueId}/messages")
+    @GET("/chats/{issueId}/messages")
     suspend fun getMessages(
         @Header("Authorization") token: String,
         @Path("issueId") issueId: Long

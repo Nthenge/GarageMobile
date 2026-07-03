@@ -24,6 +24,7 @@ data class AuthResponse(
     val firstname: String?,
     val secondname: String?,         // ← added
     val detailsCompleted: Boolean?,
+    val userId: Long?,
     val message: String?,
     val success: Boolean?
 )
